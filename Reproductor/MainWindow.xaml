@@ -14,7 +14,9 @@
         <Button x:Name="btnReproducir" Content="Reproducir" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Width="121" Click="btnReproducir_Click"/>
         <Button x:Name="btnDetener" Content="Detener" HorizontalAlignment="Left" Margin="269,38,0,0" VerticalAlignment="Top" Width="122" Click="btnDetener_Click"/>
         <Button x:Name="btnPausa" Content="Pausa" HorizontalAlignment="Left" Margin="139,38,0,0" VerticalAlignment="Top" Width="122" RenderTransformOrigin="-2.13,-4.125" Click="btnPausa_Click"/>
-        <Slider x:Name="sldTiempo" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Width="461"/>
+        <Slider x:Name="sldTiempo" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Width="461"
+                Thumb.DragStarted="sldTiempo_DragStarted"
+                Thumb.DragCompleted="sldTiempo_DragCompleted"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,105,0,0" TextWrapping="Wrap" Text="Elige dispositivo de salida:" VerticalAlignment="Top"/>
         <ComboBox x:Name="cbDispositivoSalida" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top" Width="461" SelectionChanged="cbDispositivoSalida_SelectionChanged"/>
 
